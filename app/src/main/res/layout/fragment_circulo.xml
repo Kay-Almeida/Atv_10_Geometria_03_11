@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CirculoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CirculoFragment">
+
+    <EditText
+        android:id="@+id/etRaioCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="@string/raio"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcularAreaCirculo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalcularCir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="36dp"
+        android:text="@string/calcular"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultadoCir"
+        app:layout_constraintStart_toStartOf="@+id/tvResultadoCir"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularAreaCirculo" />
+
+    <TextView
+        android:id="@+id/tvResultadoCir"
+        android:layout_width="232dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcularCir" />
+
+    <Button
+        android:id="@+id/btnCalcularAreaCirculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/calcular2"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcularCir"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalcularCir"
+        app:layout_constraintTop_toBottomOf="@+id/etRaioCirculo" />
+</androidx.constraintlayout.widget.ConstraintLayout>

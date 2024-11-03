@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cálculo de Geometria</string>
+    <string name="raio">Digite o Raio</string>
+    <string name="altura">Digite a Altura</string>
+    <string name="largura">Digite a Largura</string>
+    <string name="calcular">Calcular Perímetro</string>
+    <string name="circulo">Circulo</string>
+    <string name="retangulo">Retangulo</string>
+    <string name="calcular2">Calcula Área</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
